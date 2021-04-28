@@ -16,9 +16,12 @@ public class Server {
     try {
       while (true) {
         final Socket socket = serverSocket.accept();
-        handle(socket);
+//        handle(socket); // Handle in a same thread
+//        new Thread(() -> handle(socket)).start(); // Handle in always new thread
+        pool.submit(() -> handle(socket)); // Handle in thread pool
       }
     } finally {
+      pool.shutdown();
       serverSocket.close();
     }
   }
