@@ -1,3 +1,3 @@
-1. Run Server
+1. Run server.SocketServer
 2. $ telnet localhost 1111
 3. write something

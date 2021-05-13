@@ -1,3 +1,5 @@
+package server;
+
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -6,8 +8,8 @@ import java.util.concurrent.Executors;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Server {
-  private static final Logger log = Logger.getLogger(Server.class.getName());
+public class SocketServer {
+  private static final Logger log = Logger.getLogger(SocketServer.class.getName());
 
   public static void main(String[] args) throws IOException {
     ExecutorService pool = Executors.newFixedThreadPool(200);

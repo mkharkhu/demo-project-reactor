@@ -11,7 +11,7 @@ Java NIO selector.EchoServer
 Java NIO FileChannel
 Java NIO SocketChannel
 Java NIO ServerSocketChannel
-Java NIO: Non-blocking Server
+Java NIO: Non-blocking server.SocketServer
 Java NIO DatagramChannel
 Java NIO Pipe
 Java NIO vs. IO
